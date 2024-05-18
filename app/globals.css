@@ -2,32 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.body{
+    height: 100vh;
+    width: 100vw;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque */
+    backdrop-filter: blur(20px) saturate(180%); /* More blur and saturation */
+    -webkit-backdrop-filter: blur(20px) saturate(180%); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance the glass effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    padding: 2rem; /* Adjust padding for better spacing */
+}
+.main-background {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glassy-button {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    color: white; /* Ensure text is readable */
+    font-weight: bold; /* Bold text */
+    padding: 0.5rem 1rem; /* Padding for size */
+    border-radius: 8px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Hover effect for the button */
+.glassy-button:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
 }
