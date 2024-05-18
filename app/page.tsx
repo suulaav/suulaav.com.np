@@ -6,12 +6,12 @@ export default function Home() {
         <main className="main-background">
             <div className="glass-effect">
                 <div className="flex flex-col items-center">
-                    <h1 className="text-3xl text-amber-950 mb-9">Login</h1>
+                    <h1 className="glassy-title">Login</h1>
 
-                    <div className="w-max mb-3"><label>Email</label></div>
+                    <div className="w-max"><label className="glassy-label">Email</label></div>
                     <input className="border border-gray-400 rounded px-3 py-2 w-64 mb-3" placeholder="email" min="3" type="email"/>
 
-                    <div className="w-max mb-3"><label>Password</label></div>
+                    <div className="w-max"><label className="glassy-label">Password</label></div>
                     <input className="border border-gray-400 rounded px-3 py-2 w-64 mb-6" placeholder="password"
                            type="password" min="8"/>
 
