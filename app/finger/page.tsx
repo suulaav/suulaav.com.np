@@ -8,9 +8,9 @@ const WebSocketImagePage = () => {
     const [device, setDevice] = useState(false);
     const [start, setStart] = useState(false);
     const [take, setTake] = useState(false);
-    const [image, setImage] = useState(null);
-    const [preview, setPreview] = useState(null);
-    const [socket, setSocket] = useState(null);
+    const [image, setImage] = useState<any>(null);
+    const [preview, setPreview] = useState<any>(null);
+    const [socket, setSocket] = useState<any>(null);
 
     useEffect(() => {
         return () => {
@@ -22,7 +22,7 @@ const WebSocketImagePage = () => {
     }, [socket]);
 
     const connectWebSocket = () => {
-        const newSocket = new WebSocket('ws://localhost:8080/ws/stream');
+        const newSocket:WebSocket = new WebSocket('ws://localhost:8080/ws/stream');
 
         newSocket.onopen = () => {
             console.log('WebSocket connected');
@@ -31,7 +31,7 @@ const WebSocketImagePage = () => {
 
         newSocket.onmessage = (event) => {
             if (event.data instanceof Blob) {
-                const reader = new FileReader();
+                const reader:FileReader = new FileReader();
                 reader.onload = () => {
                     setPreview(reader.result);
                 };
