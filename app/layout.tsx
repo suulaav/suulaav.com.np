@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
-import {Inter} from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 import {SpeedInsights} from "@vercel/speed-insights/next"
+import NavBar from "@/app/(navbar)/NavBar";
 
 
 export const metadata: Metadata = {
@@ -15,7 +15,10 @@ export default function RootLayout({children,}: Readonly<{
     return (
         <html lang="en">
         <SpeedInsights></SpeedInsights>
-        <body>{children}</body>
+        <body>
+        <NavBar/>
+        {children}
+        </body>
         </html>
     );
 }
