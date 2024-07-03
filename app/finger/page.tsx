@@ -158,134 +158,134 @@ const WebSocketImagePage = () => {
                             className="m-9 bg-red-800 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-full"
                             onClick={disconnectWebSocket}>Close
                         </button>
-                        {/*<img className="m-9" src={preview} alt="Finger Print Image"/>*/}
+                        <img className="m-9" src={preview} alt="Finger Print Image"/>
                     </div>
                 )}
             </div>
 
 
-                <h2 className="text-xl font-bold">Fingerprint Impressions</h2>
-                <div className="grid grid-cols-5 gap-2 mt-2">
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
-                        Right Thumb
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*<h2 className="text-xl font-bold">Fingerprint Impressions</h2>*/}
+                {/*<div className="grid grid-cols-5 gap-2 mt-2">*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
+                {/*        Right Thumb*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
 
-                        Right Index
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Right Index*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Right Middle
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Right Middle*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
 
-                        Right Ring
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
+                {/*        Right Ring*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
 
-                        Right Little
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Right Little*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Left Thumb
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Left Thumb*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Left Index
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Left Index*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Left Middle
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Left Middle*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Left Ring
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Left Ring*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Left Little
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center col-span-2">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*        Left Little*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center col-span-2">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Left Four
-                        Fingers
-                        Taken Simultaneously
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center col-span-1">
-                        <div className="flex">
-                            <div className="border-2 border-gray-300 h-70 flex-grow items-center justify-center">
-                                {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                                <button
-                                    className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                                </button>
+                {/*        Left Four*/}
+                {/*        Fingers*/}
+                {/*        Taken Simultaneously*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center col-span-1">*/}
+                {/*        <div className="flex">*/}
+                {/*            <div className="border-2 border-gray-300 h-70 flex-grow items-center justify-center">*/}
+                {/*                {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*                <button*/}
+                {/*                    className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*                </button>*/}
 
-                                Left
-                                Thumb
-                            </div>
-                            <div className="border-2 border-gray-300 h-70 flex-grow items-center justify-center">
-                                {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                                <button
-                                    className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                                </button>
+                {/*                Left*/}
+                {/*                Thumb*/}
+                {/*            </div>*/}
+                {/*            <div className="border-2 border-gray-300 h-70 flex-grow items-center justify-center">*/}
+                {/*                {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*                <button*/}
+                {/*                    className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*                </button>*/}
 
-                                Right Thumb
-                            </div>
-                        </div>
-                    </div>
-                    <div className="border-2 border-gray-300 h-70  items-center justify-center col-span-2">
-                        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}
-                        <button
-                            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture
-                        </button>
+                {/*                Right Thumb*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*    <div className="border-2 border-gray-300 h-70  items-center justify-center col-span-2">*/}
+                {/*        {preview && <img className="m-9" src={preview} alt="Finger Print Image"/>}*/}
+                {/*        <button*/}
+                {/*            className="m-9 bg-blue-800 hover:bg-green-500 disabled:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Capture*/}
+                {/*        </button>*/}
 
-                        Right
-                        Four Fingers
-                        Taken Simultaneously
-                    </div>
-                </div>
+                {/*        Right*/}
+                {/*        Four Fingers*/}
+                {/*        Taken Simultaneously*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
             {/*{take && (*/}
             {/*    <div>*/}
