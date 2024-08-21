@@ -287,11 +287,9 @@ const WebSocketImagePage = () => {
                 {/*    </div>*/}
                 {/*</div>*/}
 
-            {/*{take && (*/}
-            {/*    <div>*/}
-            {/*        <img className="m-9" src={image} alt="Finger Print Image"/>*/}
-            {/*    </div>*/}
-            {/*)}*/}
+                {/*<div>*/}
+                {/*    <img className="m-9" src={preview} alt="Finger Print Image"/>*/}
+                {/*</div>*/}
         </>
     )
         ;
