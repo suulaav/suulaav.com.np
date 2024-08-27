@@ -25,7 +25,7 @@ const WebSocketImagePage = () => {
         const newSocket:WebSocket = new WebSocket('ws://localhost:8080/ws/stream');
 
         newSocket.onopen = () => {
-            console.log('WebSocket connected');
+            console.log('WebSocket connected ');
             setSocket(newSocket);
         };
 
