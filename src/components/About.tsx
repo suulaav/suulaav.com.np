@@ -34,11 +34,26 @@ export default function About() {
             <p className="text-sm text-ink-mid font-body leading-relaxed mb-5">
               {personal.bio}
             </p>
-            <p className="text-sm text-ink-light font-body leading-relaxed mb-8">
+            <p className="text-sm text-ink-light font-body leading-relaxed mb-6">
               I specialize in Java and Spring Boot ecosystems — from greenfield system design
               to performance tuning running JVMs at scale. I&apos;ve shipped production systems
               serving users across the United States, Australia, and Nepal.
             </p>
+
+            {/* Pullquote */}
+            <div className="border-t-2 border-b border-border py-5 mb-8">
+              <p
+                className="text-[clamp(20px,2.5vw,28px)] text-ink leading-snug text-center"
+                style={{ fontFamily: "var(--font-vt323)" }}
+              >
+                &ldquo;I ship systems that survive the rewrite,
+                <br />
+                the scale-up, and the team that comes after.&rdquo;
+              </p>
+              <p className="text-[10px] text-ink-muted tracking-widest uppercase font-body text-center mt-3">
+                — Engineering philosophy
+              </p>
+            </div>
 
             <div className="border-t border-border pt-6">
               <p className="text-[10px] text-ink-muted tracking-widest uppercase font-body mb-3">

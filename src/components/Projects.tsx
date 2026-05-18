@@ -96,7 +96,7 @@ export default function Projects() {
           {rest.map((project) => (
             <div
               key={project.title}
-              className="bg-cream p-6 flex flex-col hover:bg-cream-mid transition-colors duration-150"
+              className="bg-cream p-6 flex flex-col hover:bg-cream-mid transition-all duration-150 hover:shadow-[3px_3px_0_#C4BAA8]"
             >
               <div className="flex items-start justify-between gap-2 mb-2">
                 <span className={`text-[10px] tracking-widest uppercase font-body ${getStatusColor(project.status)}`}>
@@ -120,7 +120,12 @@ export default function Projects() {
               >
                 {project.title}
               </h3>
-              <p className="text-[10px] font-body text-ink-muted italic mb-4">{project.subtitle}</p>
+              <p className="text-[10px] font-body text-ink-muted italic mb-1">{project.subtitle}</p>
+              {"dateline" in project && (
+                <p className="text-[10px] font-body text-ink-muted tracking-widest uppercase mb-4">
+                  {(project as typeof project & { dateline: string }).dateline}
+                </p>
+              )}
 
               <p className="text-xs font-body text-ink-light leading-relaxed mb-4">
                 {project.description}

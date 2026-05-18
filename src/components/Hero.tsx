@@ -1,18 +1,24 @@
 import Image from "next/image";
 import { personal, stats } from "@/data/portfolio";
+import DateLine from "./DateLine";
 
 export default function Hero() {
   return (
     <section className="min-h-screen bg-cream pt-14 flex flex-col">
-      {/* Masthead bar */}
-      <div className="border-b border-border double-ruled">
-        <div className="max-w-6xl mx-auto px-6 py-2 flex items-center justify-between">
-          <span className="text-xs text-ink-light tracking-widest uppercase font-body">
-            {personal.location}
-          </span>
-          <span className="text-xs text-ink-light tracking-widest uppercase font-body">
-            Est. 1996 · Vol. I
-          </span>
+      {/* Newspaper masthead */}
+      <div className="border-b-2 border-ink">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex justify-between items-center py-2 border-b border-border-light">
+            <span className="text-[10px] text-ink-muted tracking-widest uppercase font-body">
+              <DateLine />
+            </span>
+            <span className="text-[10px] text-ink-muted tracking-widest uppercase font-body hidden sm:block">
+              Est. 1996 · Vol. I · No. 1
+            </span>
+            <span className="text-[10px] text-ink-muted tracking-widest uppercase font-body">
+              {personal.location}
+            </span>
+          </div>
         </div>
       </div>
 

@@ -18,11 +18,17 @@ export default function Experience() {
         </div>
 
         <div className="grid lg:grid-cols-[1fr_280px] gap-12 lg:gap-16">
-          {/* Experience list */}
-          <div className="flex flex-col divide-y divide-border-light">
+          {/* Timeline */}
+          <div className="relative">
+            <div className="absolute left-[11px] top-3 bottom-0 w-px bg-border-light" />
             {experience.map((job, i) => (
-              <div key={i} className="py-8 first:pt-0 last:pb-0">
-                <div className="grid sm:grid-cols-[1fr_auto] gap-2 mb-4">
+              <div key={i} className="relative pl-10 pb-12 last:pb-0">
+                {/* Dot */}
+                <div className="absolute left-0 top-1 w-6 h-6 border border-border bg-cream flex items-center justify-center shrink-0">
+                  <div className="w-2 h-2 bg-rose" />
+                </div>
+
+                <div className="grid sm:grid-cols-[1fr_auto] gap-2 mb-3">
                   <div>
                     <h3
                       className="text-3xl text-ink leading-tight"
@@ -42,7 +48,7 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <p className="text-sm font-body text-ink-mid leading-relaxed mb-4">
+                <p className="text-sm font-body text-ink-mid leading-relaxed mb-3">
                   {job.description}
                 </p>
 

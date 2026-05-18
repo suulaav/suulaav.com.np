@@ -14,7 +14,7 @@ location: "Chabahil, Kathmandu, Nepal",
 };
 
 export const stats = [
-  { value: "4+", label: "Years Experience" },
+  { value: "7+", label: "Years Experience" },
   { value: "7+", label: "Production Systems" },
   { value: "3", label: "Countries Served" },
   { value: "∞", label: "Bugs Squashed" },
@@ -67,7 +67,7 @@ export const projects = [
     title: "Pacesetter",
     subtitle: "Taxation System · United States",
     description:
-      "Taxation system used by thousands of users in the United States, processing live tax data for 2023. Built a custom in-house logging solution and queue-based document processing pipeline.",
+      "High-throughput taxation platform serving thousands of US users — engineered a custom in-house logging infrastructure and queue-based document processing pipeline capable of handling large-scale live tax workloads with precision and auditability.",
     tech: ["Java", "Spring Boot", "PostgreSQL", "JVM Tuning", "Queue Processing"],
     highlights: [
       "Created in-house logging solution for easier log processing",
@@ -77,6 +77,7 @@ export const projects = [
     live: null,
     status: "Production",
     featured: true,
+    dateline: "United States · 2021",
   },
   {
     title: "Legal Candace",
@@ -92,6 +93,7 @@ export const projects = [
     live: null,
     status: "In Development",
     featured: false,
+    dateline: "United States · 2025",
   },
   {
     title: "Acruit",
@@ -108,6 +110,7 @@ export const projects = [
     live: null,
     status: "Production",
     featured: false,
+    dateline: "AU & NZ · 2023",
   },
   {
     title: "BioCert",
@@ -123,6 +126,7 @@ export const projects = [
     live: null,
     status: "Production",
     featured: false,
+    dateline: "United States · 2025",
   },
   {
     title: "Speak Tu",
@@ -138,6 +142,24 @@ export const projects = [
     live: null,
     status: "Production since Sep 2022",
     featured: false,
+    dateline: "United States · 2022",
+  },
+  {
+    title: "Sahara",
+    subtitle: "Community Health · Nepal",
+    description:
+      "Telemedicine platform connecting rural Nepali communities to licensed doctors — built to bridge the healthcare gap in remote districts where physical clinics are inaccessible, enabling real-time consultations, prescription management, and health record keeping.",
+    tech: ["Java", "Spring Boot", "PostgreSQL", "WebRTC", "Firebase"],
+    highlights: [
+      "Real-time video consultations via WebRTC for remote villages",
+      "Offline-first health record sync for low-connectivity regions",
+      "Multi-language support (Nepali, Maithili, Newari) for accessibility",
+      "Integrated with government health ministry data reporting APIs",
+    ],
+    live: null,
+    status: "Open Source",
+    featured: false,
+    dateline: "Nepal · 2024",
   },
   {
     title: "Nepal Warrior Championship",
@@ -152,15 +174,52 @@ export const projects = [
     live: "https://hwcmma.com",
     status: "Production",
     featured: false,
+    dateline: "Nepal · 2025",
   },
 ];
 
-export const skills = {
-  Backend: ["Java", "Spring Boot", "RESTful APIs", "Microservices", "JVM Tuning", "C++", "Python"],
-  Database: ["PostgreSQL", "MongoDB", "Elasticsearch", "Redis", "SQL", "NoSQL Migration"],
-  DevOps: ["Docker", "Jenkins", "Nginx", "Wildfly", "SonarQube", "CI/CD"],
-  "Project Tools": ["Confluence", "Jira", "Postman", "Git", "GitHub"],
-  "AI & Data": ["Feature Pipelines", "Embedding Generation", "Vector Stores", "Semantic Search", "Hugging Face", "Python", "Data Science Methodology", "ETL Design"],
+export const skills: Record<string, { name: string; level: number }[]> = {
+  Backend: [
+    { name: "Java", level: 95 },
+    { name: "Spring Boot", level: 92 },
+    { name: "RESTful APIs", level: 90 },
+    { name: "Microservices", level: 80 },
+    { name: "JVM Tuning", level: 75 },
+    { name: "C++", level: 60 },
+    { name: "Python", level: 65 },
+  ],
+  Database: [
+    { name: "PostgreSQL", level: 88 },
+    { name: "MongoDB", level: 80 },
+    { name: "Elasticsearch", level: 82 },
+    { name: "Redis", level: 75 },
+    { name: "SQL", level: 90 },
+    { name: "NoSQL Migration", level: 70 },
+  ],
+  DevOps: [
+    { name: "Docker", level: 80 },
+    { name: "Jenkins", level: 72 },
+    { name: "Nginx", level: 75 },
+    { name: "Wildfly", level: 70 },
+    { name: "SonarQube", level: 78 },
+    { name: "CI/CD", level: 80 },
+  ],
+  "Project Tools": [
+    { name: "Confluence", level: 85 },
+    { name: "Jira", level: 88 },
+    { name: "Postman", level: 90 },
+    { name: "Git", level: 92 },
+    { name: "GitHub", level: 92 },
+  ],
+  "AI & Data": [
+    { name: "Feature Pipelines", level: 65 },
+    { name: "Embedding Generation", level: 60 },
+    { name: "Vector Stores", level: 62 },
+    { name: "Semantic Search", level: 70 },
+    { name: "Hugging Face", level: 58 },
+    { name: "ETL Design", level: 70 },
+    { name: "Data Science Methodology", level: 60 },
+  ],
 };
 
 export const education = [

@@ -5,7 +5,15 @@ const categoryAccent: Record<string, string> = {
   Database: "border-l-amber",
   DevOps: "border-l-slate",
   "Project Tools": "border-l-sage",
-  "Data & AI": "border-l-ink-muted",
+  "AI & Data": "border-l-ink-muted",
+};
+
+const barColor: Record<string, string> = {
+  Backend: "bg-rose",
+  Database: "bg-amber",
+  DevOps: "bg-slate",
+  "Project Tools": "bg-sage",
+  "AI & Data": "bg-ink-light",
 };
 
 export default function Skills() {
@@ -28,19 +36,23 @@ export default function Skills() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {Object.entries(skills).map(([category, items]) => {
             const accent = categoryAccent[category] ?? "border-l-border";
+            const bar = barColor[category] ?? "bg-ink";
             return (
               <div key={category} className={`border border-border bg-cream-mid p-6 border-l-2 ${accent}`}>
-                <p className="text-[10px] text-ink-muted tracking-widest uppercase font-body mb-4">
+                <p className="text-[10px] text-ink-muted tracking-widest uppercase font-body mb-5">
                   {category}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-col gap-3.5">
                   {items.map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-2.5 py-1 text-xs font-body text-ink-mid border border-border-light bg-cream hover:bg-cream-dark transition-colors duration-150"
-                    >
-                      {skill}
-                    </span>
+                    <div key={skill.name} className="flex flex-col gap-1">
+                      <div className="flex justify-between items-baseline">
+                        <span className="text-xs font-body text-ink-mid">{skill.name}</span>
+                        <span className="text-[10px] font-body text-ink-muted">{skill.level}%</span>
+                      </div>
+                      <div className="w-full h-0.5 bg-border-light">
+                        <div className={`h-0.5 ${bar}`} style={{ width: `${skill.level}%` }} />
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>

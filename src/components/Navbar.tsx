@@ -14,11 +14,26 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveSection(entry.target.id);
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+    sections.forEach((s) => obs.observe(s));
+    return () => obs.disconnect();
   }, []);
 
   return (
@@ -45,7 +60,11 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-xs tracking-widest uppercase text-ink-mid hover:text-ink transition-colors duration-150 font-body"
+                className={`text-xs tracking-widest uppercase transition-colors duration-150 font-body ${
+                  activeSection && `#${activeSection}` === l.href
+                    ? "text-ink border-b border-ink pb-0.5"
+                    : "text-ink-mid hover:text-ink"
+                }`}
               >
                 {l.label}
               </a>
