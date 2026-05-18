@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #F5F0E8;
+  --color-cream-mid: #EDE7DA;
+  --color-cream-dark: #E0D8C8;
+  --color-ink: #1E1A16;
+  --color-ink-mid: #52473E;
+  --color-ink-light: #8C7E73;
+  --color-ink-muted: #B5A99F;
+  --color-border: #C4BAA8;
+  --color-border-light: #D9D0C2;
+  --color-rose: #B8907A;
+  --color-sage: #7A9E80;
+  --color-slate: #7A95A8;
+  --color-amber: #B89060;
+  --font-display: var(--font-vt323);
+  --font-body: var(--font-courier);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+  background-color: #F5F0E8 !important;
+}
+
+body {
+  background-color: #F5F0E8 !important;
+  color: #1E1A16 !important;
+  font-family: var(--font-courier), "Courier New", Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(184, 144, 96, 0.3);
+  color: #1E1A16;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EDE7DA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4BAA8;
+  border-radius: 0;
+}
+
+/* Dot-matrix halftone pattern for decorative elements */
+.dot-matrix {
+  background-image: radial-gradient(circle, rgba(30, 26, 22, 0.25) 1.2px, transparent 1.2px);
+  background-size: 5px 5px;
+}
+
+.dot-matrix-light {
+  background-image: radial-gradient(circle, rgba(30, 26, 22, 0.1) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* Newspaper ruled lines */
+.ruled {
+  border-top: 1px solid #C4BAA8;
+}
+
+.double-ruled {
+  border-top: 3px double #C4BAA8;
+}
