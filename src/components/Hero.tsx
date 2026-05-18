@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { personal, stats } from "@/data/portfolio";
 
 export default function Hero() {
@@ -10,7 +11,7 @@ export default function Hero() {
             {personal.location}
           </span>
           <span className="text-xs text-ink-light tracking-widest uppercase font-body">
-            Est. 2019 · Vol. I
+            Est. 1996 · Vol. I
           </span>
         </div>
       </div>
@@ -91,21 +92,15 @@ export default function Hero() {
 
             {/* Right: Dot-matrix portrait + stats */}
             <div className="flex flex-col gap-6">
-              {/* Dot-matrix portrait placeholder */}
+              {/* Profile portrait */}
               <div className="relative border border-border overflow-hidden" style={{ aspectRatio: "3/4" }}>
-                <div className="absolute inset-0 dot-matrix" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                  <span
-                    className="text-[80px] leading-none text-ink/20"
-                    style={{ fontFamily: "var(--font-vt323)" }}
-                  >
-                    SP
-                  </span>
-                  <span className="text-xs text-ink-muted tracking-widest uppercase font-body text-center px-4">
-                    Add your photo here<br />
-                    <span className="text-[10px]">public/photo.jpg</span>
-                  </span>
-                </div>
+                <Image
+                  src="/profile.jpg"
+                  alt={personal.name}
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
                 {/* Corner marks — newspaper photo style */}
                 <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-ink/30" />
                 <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-ink/30" />

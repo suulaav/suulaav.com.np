@@ -3,14 +3,13 @@ export const personal = {
   role: "Sr. Backend Engineer",
   tagline: "Building scalable SaaS systems from the ground up",
   bio: "Backend engineer based in Kathmandu, Nepal. Designing and developing scalable SaaS products across desktop, tablet, and mobile platforms. Currently leading technical decisions and mentoring at Aricalot Technology.",
-  email: "suulaav@gmail.com",
-  phone: "+977-9841197377",
-  location: "Chabahil, Kathmandu, Nepal",
+  email: "contact@suulaav.com.np",
+location: "Chabahil, Kathmandu, Nepal",
   available: true,
   links: {
     github: "https://github.com/suulaav",
-    linkedin: "https://linkedin.com/in/sulav-poudel",
-    email: "mailto:suulaav@gmail.com",
+    linkedin: "https://www.linkedin.com/in/suulaav/",
+    email: "mailto:contact@suulaav.com.np",
   },
 };
 
@@ -98,23 +97,23 @@ export const projects = [
     title: "Acruit",
     subtitle: "Healthcare Staffing · AU & NZ",
     description:
-      "Nurse shift placement and management portal serving healthcare professionals across Australia and New Zealand, with full financial and support integrations.",
+      "AI-driven nurse shift placement platform serving healthcare facilities across Australia and New Zealand — intelligent matching engine pairs nurses to shifts based on qualifications, availability, and historical performance, with full financial and support integrations.",
     tech: ["Java", "Spring Boot", "Xero API", "Zendesk"],
     highlights: [
-      "Shift scheduling, assignment, and management for healthcare professionals",
-      "Integrated Xero for invoicing and payroll processing",
+      "ML-based nurse-shift matching using qualification, location, and availability signals",
+      "Predictive demand forecasting to pre-fill shifts before facilities post them",
+      "Integrated Xero for automated invoicing and payroll processing",
       "Integrated Zendesk for customer support",
-      "Ensured compliance with regional healthcare staffing regulations",
     ],
     live: null,
     status: "Production",
     featured: false,
   },
   {
-    title: "Solution 50",
-    subtitle: "Biometrics Capture · United States",
+    title: "BioCert",
+    subtitle: "Identity & Biometrics · United States",
     description:
-      "Appointment booking and biometrics capture service for FBI Background checks and fingerprint services — built a custom fingerprint card and hardware integration from scratch.",
+      "AI-assisted biometric identity verification platform for background screening and fingerprint enrollment — engineered a full 10-print capture pipeline with hardware-level integration, native C++ card generation, and intelligent image quality analysis.",
     tech: ["Java", "C++", "JNI", "Hardware Integration"],
     highlights: [
       "Built 10-fingerprint card from scratch using C++",
@@ -161,14 +160,14 @@ export const skills = {
   Database: ["PostgreSQL", "MongoDB", "Elasticsearch", "Redis", "SQL", "NoSQL Migration"],
   DevOps: ["Docker", "Jenkins", "Nginx", "Wildfly", "SonarQube", "CI/CD"],
   "Project Tools": ["Confluence", "Jira", "Postman", "Git", "GitHub"],
-  "Data & AI": ["Google Data Analytics", "Data Science Methodology", "Python for AI"],
+  "AI & Data": ["Feature Pipelines", "Embedding Generation", "Vector Stores", "Semantic Search", "Hugging Face", "Python", "Data Science Methodology", "ETL Design"],
 };
 
 export const education = [
   {
     institution: "Nepal Engineering College, Pokhara University",
     period: "2014 — 2018",
-    degree: "B.E. Computer Engineering",
+    degree: "B.E. Electronics & Communication Engineering",
   },
   {
     institution: "Trinity International College",

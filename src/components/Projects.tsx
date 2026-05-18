@@ -122,9 +122,18 @@ export default function Projects() {
               </h3>
               <p className="text-[10px] font-body text-ink-muted italic mb-4">{project.subtitle}</p>
 
-              <p className="text-xs font-body text-ink-light leading-relaxed mb-5 flex-1">
+              <p className="text-xs font-body text-ink-light leading-relaxed mb-4">
                 {project.description}
               </p>
+
+              <ul className="flex flex-col gap-1.5 mb-5 flex-1">
+                {project.highlights.map((h, i) => (
+                  <li key={i} className="flex items-start gap-2 text-[11px] font-body text-ink-light">
+                    <span className="mt-1.5 w-1.5 h-px bg-border-light shrink-0" />
+                    {h}
+                  </li>
+                ))}
+              </ul>
 
               <div className="flex flex-wrap gap-1.5 mt-auto pt-4 border-t border-border-light">
                 {project.tech.map((t) => (

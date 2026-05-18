@@ -57,22 +57,16 @@ export default function Contact() {
               },
               {
                 label: "LinkedIn",
-                value: "linkedin.com/in/sulav-poudel",
+                value: "linkedin.com/in/suulaav",
                 href: personal.links.linkedin,
                 note: "Professional network",
-              },
-              {
-                label: "Phone",
-                value: personal.phone,
-                href: `tel:${personal.phone.replace(/\D/g, "")}`,
-                note: "Kathmandu, Nepal",
               },
             ].map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                target={item.label !== "Phone" ? "_blank" : undefined}
-                rel={item.label !== "Phone" ? "noopener noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center justify-between py-5 hover:bg-cream transition-colors duration-150 px-2 -mx-2"
               >
                 <div>
