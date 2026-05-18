@@ -40,22 +40,17 @@ export default function Hero() {
               </div>
 
               <h1
-                className="halftone-text text-[clamp(72px,12vw,144px)] leading-none text-ink mb-2"
+                className="halftone-text text-[clamp(72px,12vw,144px)] leading-none mb-6"
                 style={{ fontFamily: "var(--font-vt323)" }}
               >
-                {personal.name.split(" ")[0]}
-              </h1>
-              <h1
-                className="halftone-text text-[clamp(72px,12vw,144px)] leading-none text-rose mb-6"
-                style={{ fontFamily: "var(--font-vt323)" }}
-              >
-                {personal.name.split(" ")[1]}
+                <span className="text-ink block">{personal.name.split(" ")[0]}</span>
+                <span className="text-rose block">{personal.name.split(" ")[1]}</span>
               </h1>
 
               <div className="border-t border-border pt-6 mb-6">
-                <p className="text-lg text-ink-mid font-body leading-relaxed max-w-xl">
+                <h2 className="text-lg text-ink-mid font-body leading-relaxed max-w-xl">
                   {personal.role} — {personal.tagline}.
-                </p>
+                </h2>
               </div>
 
               <p className="drop-cap text-sm text-ink-light font-body leading-relaxed max-w-lg mb-10">
