@@ -24,7 +24,7 @@ export default function Projects() {
           <span className="text-xs text-ink-light tracking-widest uppercase font-body">§ 03</span>
           <div className="h-px flex-1 bg-border" />
           <span
-            className="text-2xl text-ink"
+            className="halftone-text text-2xl text-ink"
             style={{ fontFamily: "var(--font-vt323)" }}
           >
             SELECTED WORK
@@ -39,12 +39,12 @@ export default function Projects() {
               <p className="text-[10px] text-ink-muted tracking-widest uppercase font-body">
                 Featured
               </p>
-              <span className={`text-[10px] tracking-widest uppercase font-body ${getStatusColor(featured.status)}`}>
-                ● {featured.status}
+              <span className={`stamp text-[9px] tracking-widest uppercase font-body ${getStatusColor(featured.status)}`}>
+                {featured.status}
               </span>
             </div>
             <h3
-              className="text-4xl text-ink mb-1"
+              className="halftone-text text-4xl text-ink mb-1"
               style={{ fontFamily: "var(--font-vt323)" }}
             >
               {featured.title}
@@ -91,6 +91,8 @@ export default function Projects() {
           </div>
         </div>
 
+        <hr className="cut-line my-6" />
+
         {/* Project grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
           {rest.map((project) => (
@@ -99,8 +101,8 @@ export default function Projects() {
               className="bg-cream p-6 flex flex-col hover:bg-cream-mid transition-all duration-150 hover:shadow-[3px_3px_0_#C4BAA8]"
             >
               <div className="flex items-start justify-between gap-2 mb-2">
-                <span className={`text-[10px] tracking-widest uppercase font-body ${getStatusColor(project.status)}`}>
-                  ● {project.status}
+                <span className={`stamp text-[9px] tracking-widest uppercase font-body ${getStatusColor(project.status)}`}>
+                  {project.status}
                 </span>
                 {project.live && (
                   <a
@@ -115,7 +117,7 @@ export default function Projects() {
               </div>
 
               <h3
-                className="text-2xl text-ink mb-0.5"
+                className="halftone-text text-2xl text-ink mb-0.5"
                 style={{ fontFamily: "var(--font-vt323)" }}
               >
                 {project.title}

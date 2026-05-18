@@ -3,6 +3,7 @@ import { VT323, Courier_Prime } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Cursor from "@/components/Cursor";
+import CropMarks from "@/components/CropMarks";
 
 const vt323 = VT323({
   weight: "400",
@@ -52,6 +53,7 @@ export default function RootLayout({
       className={`${vt323.variable} ${courierPrime.variable} scroll-smooth`}
     >
       <body className="bg-cream text-ink antialiased">
+        <CropMarks />
         <Cursor />
         <Navbar />
         {children}

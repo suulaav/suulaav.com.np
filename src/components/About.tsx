@@ -12,7 +12,7 @@ export default function About() {
           <span className="text-xs text-ink-light tracking-widest uppercase font-body">§ 01</span>
           <div className="h-px flex-1 bg-border" />
           <span
-            className="text-2xl text-ink"
+            className="halftone-text text-2xl text-ink"
             style={{ fontFamily: "var(--font-vt323)" }}
           >
             ABOUT
@@ -27,9 +27,9 @@ export default function About() {
               className="text-4xl lg:text-5xl text-ink mb-6 leading-tight"
               style={{ fontFamily: "var(--font-vt323)" }}
             >
-              Building robust systems
+              <span className="halftone-text text-ink">Building robust systems</span>
               <br />
-              <span className="text-rose">that actually ship.</span>
+              <span className="halftone-text text-rose">that actually ship.</span>
             </h2>
             <p className="text-sm text-ink-mid font-body leading-relaxed mb-5">
               {personal.bio}
@@ -43,7 +43,7 @@ export default function About() {
             {/* Pullquote */}
             <div className="border-t-2 border-b border-border py-5 mb-8">
               <p
-                className="text-[clamp(20px,2.5vw,28px)] text-ink leading-snug text-center"
+                className="halftone-text text-[clamp(20px,2.5vw,28px)] text-ink leading-snug text-center"
                 style={{ fontFamily: "var(--font-vt323)" }}
               >
                 &ldquo;I ship systems that survive the rewrite,

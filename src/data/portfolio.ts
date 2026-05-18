@@ -1,7 +1,7 @@
 export const personal = {
   name: "Sulav Poudel",
   role: "Sr. Backend Engineer",
-  tagline: "Building scalable SaaS systems from the ground up",
+  tagline: "The part of the stack nobody sees but everybody depends on",
   bio: "Backend engineer based in Kathmandu, Nepal. Designing and developing scalable SaaS products across desktop, tablet, and mobile platforms. Currently leading technical decisions and mentoring at Aricalot Technology.",
   email: "contact@suulaav.com.np",
 location: "Chabahil, Kathmandu, Nepal",

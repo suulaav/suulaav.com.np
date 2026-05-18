@@ -9,7 +9,7 @@ export default function Experience() {
           <span className="text-xs text-ink-light tracking-widest uppercase font-body">§ 02</span>
           <div className="h-px flex-1 bg-border" />
           <span
-            className="text-2xl text-ink"
+            className="halftone-text text-2xl text-ink"
             style={{ fontFamily: "var(--font-vt323)" }}
           >
             WORK EXPERIENCE
@@ -31,7 +31,7 @@ export default function Experience() {
                 <div className="grid sm:grid-cols-[1fr_auto] gap-2 mb-3">
                   <div>
                     <h3
-                      className="text-3xl text-ink leading-tight"
+                      className="halftone-text text-3xl text-ink leading-tight"
                       style={{ fontFamily: "var(--font-vt323)" }}
                     >
                       {job.role}
@@ -73,7 +73,10 @@ export default function Experience() {
               {education.map((edu, i) => (
                 <div key={i} className="border-l-2 border-border pl-4">
                   <p className="text-xs font-body text-ink-muted mb-1">{edu.period}</p>
-                  <p className="text-sm font-body text-ink leading-snug font-bold">
+                  <p
+                    className="halftone-text text-2xl text-ink leading-snug"
+                    style={{ fontFamily: "var(--font-vt323)" }}
+                  >
                     {edu.institution}
                   </p>
                   <p className="text-xs font-body text-ink-light mt-0.5">{edu.degree}</p>
@@ -90,7 +93,7 @@ export default function Experience() {
                 </p>
                 <div className="flex flex-col gap-3">
                   {[
-                    { n: "4+", l: "Years in backend" },
+                    { n: "7+", l: "Years in backend" },
                     { n: "7+", l: "Production systems" },
                     { n: "3", l: "Countries served" },
                     { n: "1000s", l: "Users on Pacesetter" },
@@ -98,7 +101,7 @@ export default function Experience() {
                     <div key={s.l} className="flex justify-between items-baseline">
                       <span className="text-xs font-body text-ink-mid">{s.l}</span>
                       <span
-                        className="text-xl text-ink"
+                        className="halftone-text text-xl text-ink"
                         style={{ fontFamily: "var(--font-vt323)" }}
                       >
                         {s.n}

@@ -9,7 +9,7 @@ export default function Contact() {
           <span className="text-xs text-ink-light tracking-widest uppercase font-body">§ 05</span>
           <div className="h-px flex-1 bg-border" />
           <span
-            className="text-2xl text-ink"
+            className="halftone-text text-2xl text-ink"
             style={{ fontFamily: "var(--font-vt323)" }}
           >
             CONTACT
@@ -24,9 +24,9 @@ export default function Contact() {
               className="text-5xl lg:text-6xl text-ink leading-tight mb-6"
               style={{ fontFamily: "var(--font-vt323)" }}
             >
-              Let&apos;s work
+              <span className="halftone-text text-ink">Let&apos;s work</span>
               <br />
-              <span className="text-rose">together.</span>
+              <span className="halftone-text text-rose">together.</span>
             </h2>
             <p className="text-sm font-body text-ink-mid leading-relaxed mb-8 max-w-md">
               Open to backend engineering roles, consulting, and interesting

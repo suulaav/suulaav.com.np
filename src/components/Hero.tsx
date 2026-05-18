@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <section className="min-h-screen bg-cream pt-14 flex flex-col">
       {/* Newspaper masthead */}
-      <div className="border-b-2 border-ink">
+      <div>
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex justify-between items-center py-2 border-b border-border-light">
+          <div className="flex justify-between items-center py-2 border-t border-b border-border-light">
             <span className="text-[10px] text-ink-muted tracking-widest uppercase font-body">
               <DateLine />
             </span>
@@ -29,23 +29,24 @@ export default function Hero() {
 
             {/* Left: Name + role + bio + CTAs */}
             <div>
-              <div className="mb-4">
+              <div className="mb-6">
                 {personal.available && (
-                  <span className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-sage font-body">
-                    <span className="w-1.5 h-1.5 rounded-full bg-sage" />
-                    Available for new projects
-                  </span>
+                  <div className="inline-block border border-border-light px-3 py-2">
+                    <p className="text-[9px] text-ink-muted tracking-widest uppercase font-body mb-0.5">■ Field Dispatch</p>
+                    <p className="text-[11px] text-ink tracking-widest uppercase font-body">Engineer on the ground</p>
+                    <p className="text-[10px] text-ink-light font-body italic">Available for deployment</p>
+                  </div>
                 )}
               </div>
 
               <h1
-                className="text-[clamp(72px,12vw,144px)] leading-none text-ink mb-2"
+                className="halftone-text text-[clamp(72px,12vw,144px)] leading-none text-ink mb-2"
                 style={{ fontFamily: "var(--font-vt323)" }}
               >
                 {personal.name.split(" ")[0]}
               </h1>
               <h1
-                className="text-[clamp(72px,12vw,144px)] leading-none text-rose mb-6"
+                className="halftone-text text-[clamp(72px,12vw,144px)] leading-none text-rose mb-6"
                 style={{ fontFamily: "var(--font-vt323)" }}
               >
                 {personal.name.split(" ")[1]}
@@ -57,7 +58,7 @@ export default function Hero() {
                 </p>
               </div>
 
-              <p className="text-sm text-ink-light font-body leading-relaxed max-w-lg mb-10">
+              <p className="drop-cap text-sm text-ink-light font-body leading-relaxed max-w-lg mb-10">
                 {personal.bio}
               </p>
 
@@ -107,6 +108,7 @@ export default function Hero() {
                   className="object-cover object-top"
                   priority
                 />
+                <div className="halftone-overlay absolute inset-0 pointer-events-none" />
                 {/* Corner marks — newspaper photo style */}
                 <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-ink/30" />
                 <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-ink/30" />
