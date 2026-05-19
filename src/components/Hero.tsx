@@ -40,11 +40,11 @@ export default function Hero() {
               </div>
 
               <h1
-                className="halftone-text text-[clamp(72px,12vw,144px)] leading-none mb-6"
+                className="text-[clamp(72px,12vw,144px)] leading-none mb-6"
                 style={{ fontFamily: "var(--font-vt323)" }}
               >
-                <span className="text-ink block">{personal.name.split(" ")[0]}</span>
-                <span className="text-rose block">{personal.name.split(" ")[1]}</span>
+                <span className="halftone-text text-ink block">{personal.name.split(" ")[0]}</span>
+                <span className="halftone-text text-rose block">{personal.name.split(" ")[1]}</span>
               </h1>
 
               <div className="border-t border-border pt-6 mb-6">
