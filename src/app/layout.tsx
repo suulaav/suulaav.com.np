@@ -86,7 +86,7 @@ export default function RootLayout({
       className={`${vt323.variable} ${courierPrime.variable} scroll-smooth`}
     >
       <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5786556813072424"
-     crossorigin="anonymous"></script></head>
+     crossOrigin="anonymous"></script></head>
       <body className="bg-cream text-ink antialiased">
         <script
           type="application/ld+json"
